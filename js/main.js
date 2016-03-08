@@ -1,5 +1,12 @@
-var $body = $('body')
-var $h1 = $('<h1>');
+var $body = $('body');
+var $h2a = $('<h2>');
+var $h2b = $('<h2>')
 
-$h1.html('Below Ground Veggies');
-$body.append($h1);
+
+$h2a.html('Below Ground Veggies');
+
+$body.prepend($h2a);
+
+$h2b.html('Above Ground Veggies')
+$body.append($h2b);
+
