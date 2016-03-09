@@ -7,16 +7,16 @@ var $ul = $('ul');
 var $li = $('ul li');
 
 $body.append($headerB);
-$headerB.html('Below Ground Veggies');
+$headerB.html('Below ground veggies');
 $body.append($ulB);
 $body.append($headerA);
-$headerA.html('Above Ground Veggies');
+$headerA.html('Above ground veggies');
 $body.append($ulA);
 
 $li.each(function () {
-  if ($(this).hasClass('below')){
+  if ($(this).hasClass('below')) {
     $ulB.append($(this));
-  }else{
+  } else {
     $ulA.append($(this));
   }
 });
